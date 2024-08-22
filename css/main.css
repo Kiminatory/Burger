@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: var(--nunito-sans);
+    font-family: var(--open-sans);
 }
 
 a {
@@ -21,6 +21,10 @@ a {
 /* header */
 
 .header {
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.header-wrapper {
     display: flex;
     align-items: center;
     gap: 196px;
@@ -47,6 +51,7 @@ a {
     flex-grow: 1;
     display: flex;
     gap: 46px;
+    margin-top: 2px;
 }
 
 .nav-link {
@@ -113,7 +118,7 @@ a {
     background-size: cover;
     background-position: center center;
     text-align: center;
-    padding: 142px;
+    padding: 142px 0;
 }
 
 .container {}
@@ -154,6 +159,7 @@ a {
     font-size: 79px;
     font-weight: 700;
     text-transform: capitalize;
+    margin: 18px;
 }
 
 .hero-description {
@@ -163,4 +169,58 @@ a {
     color: rgba(var(--light-rgb), 0.8);
     text-align: center;
     line-height: 160%;
+}
+
+.banner {
+    margin-top: 140px;
+}
+
+.container {}
+
+.banner-wrapper {
+    padding: 100px 0 100px 100px;
+    background: url(../img/banner..jpg);
+}
+
+.banner-title {
+    font-family: var(--nunito-sans);
+    color: var(--light);
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.banner-title span {
+    display: block;
+    font-family: var(--open-sans);
+    font-weight: 600;
+    color: var(--light);
+    background: var(--orange);
+    width: 95px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 7px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.banner-description {
+    font-size: 15px;
+    color: rgba(var(--light-rgb), 0.8);
+    max-width: 353px;
+    margin-bottom: 15px;
+    line-height: 146%;
+}
+
+.banner-btn {
+    font-family: var(--nunito-sans);
+    background: var(--yellow);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 21px 24px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--dark);
 }
