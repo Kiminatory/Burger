@@ -180,6 +180,8 @@ a {
 .banner-wrapper {
     padding: 100px 0 100px 100px;
     background: url(../img/banner..jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .banner-title {
