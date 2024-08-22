@@ -171,6 +171,8 @@ a {
     line-height: 160%;
 }
 
+/* banner */
+
 .banner {
     margin-top: 140px;
 }
@@ -181,7 +183,7 @@ a {
     padding: 100px 0 100px 100px;
     background: url(../img/banner..jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .banner-title {
@@ -200,7 +202,7 @@ a {
     background: var(--orange);
     width: 95px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 14px;
     padding: 7px 0;
     font-size: 14px;
     text-transform: uppercase;
@@ -225,4 +227,104 @@ a {
     text-transform: uppercase;
     cursor: pointer;
     color: var(--dark);
+    border: none;
+}
+
+/* menu */
+
+.menu {
+    margin-top: 104px;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+
+.menu-title {
+    font-family: var(--nunito-sans);
+    font-size: 44px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin: 0;
+}
+
+.menu-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 50px 20px;
+}
+
+.menu-item {}
+
+.menu-thumb {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-thumb img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.menu-name {
+    text-align: center;
+    font-family: var(--nunito-sans);
+    font-size: 29px;
+    color: var(--dark);
+    margin: 23px 0 7px;
+}
+
+.menu-price {
+    text-align: center;
+    font-family: var(--nunito-sans);
+    color: rgba(68, 55, 55, 0.5);
+    margin-bottom: 22px;
+    font-size: 22px;
+}
+
+.menu-btn {
+    display: block;
+    font-family: var(--nunito-sans);
+    background: var(--yellow);
+    padding: 10px 28px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-size: 14px;
+    padding: 0 10px 0 0;
+}
+
+.menu-btn span::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/cart.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
 }
