@@ -35,7 +35,7 @@ a {
 .header-wrapper {
     display: flex;
     align-items: center;
-    gap: 196px;
+    gap: 56px;
     padding: 26px 0;
 }
 
@@ -44,6 +44,7 @@ a {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -60,6 +61,7 @@ a {
     display: flex;
     gap: 46px;
     margin-top: 2px;
+    margin-left: min(10vw, 140px);
 }
 
 .nav-link {
@@ -168,8 +170,6 @@ a {
     background-size: cover;
 }
 
-.container {}
-
 .breadcrumbs {
     display: flex;
     justify-content: center;
@@ -223,8 +223,6 @@ a {
 .banner {
     margin-top: 140px;
 }
-
-.container {}
 
 .banner-wrapper {
     padding: 100px 0 100px 100px;
@@ -419,6 +417,7 @@ select {
     display: flex;
     justify-content: space-between;
     padding: 118px 0 110px 0;
+    gap: 15px;
 }
 
 .footer-logo {
@@ -431,6 +430,10 @@ select {
 }
 
 .footer-item {}
+
+.footer-item:last-child {
+    flex-basis: 213px;
+}
 
 .footer-title {
     font-family: var(--nunito-sans);
@@ -473,9 +476,14 @@ select {
     display: block;
     font-size: 22px;
     font-weight: 900;
+    text-align: right;
     color: var(--yellow);
     line-height: 156%;
     transition-duration: 0.2s;
+}
+
+.footer-tel._mobile {
+    display: none;
 }
 
 .footer-tel:hover {
@@ -581,4 +589,75 @@ select {
 
 .contact-tel:hover {
     color: var(--accent-light);
+}
+
+@media(max-width: 1080px) {
+    .header-wrapper {
+        gap: 40px;
+    }
+
+    .nav {
+        margin-left: 0px;
+        gap: max(3vw, 30px);
+    }
+}
+
+@media(max-width: 768px) {
+    .header-wrapper {
+        gap: 45px;
+    }
+
+    .logo {
+        width: 176px;
+        height: 47.81px;
+    }
+
+    .nav {
+        gap: 22px;
+    }
+
+    .banner {
+        margin-top: 72px;
+    }
+
+    .banner-wrapper {
+        padding: 100px 40px;
+    }
+
+    .menu {
+        margin-top: 80px;
+    }
+
+    .menu-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-box._additionally {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item._additionally {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu-item._additionally .menu-thumb {
+        flex-basis: calc(60% - 20);
+        height: 268px;
+        margin-bottom: 0;
+    }
+
+    .menu-item._additionally .menu-info {
+        flex-basis: 40%;
+    }
+
+    .footer-item:last-child {
+        display: none;
+    }
+
+    .footer-tel._mobile {
+        display: block;
+        text-align: left;
+    }
 }
