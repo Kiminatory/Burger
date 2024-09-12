@@ -20,6 +20,7 @@
     <header id="headerTop" class="header">
         <div class="container">
             <div class="header-wrapper">
+                <button class="burger-menu" onclick="openModal()"></button>
                 <div class="logo"></div>
                 <nav class="nav">
                     <a href="#" class="nav-link">Главная</a>
@@ -58,7 +59,7 @@
                 <div class="container">
                     <div class="menu-header">
                         <h2 class="menu-title">Бургеры</h2>
-                        <select name="" id="">
+                        <select class="menu-select" name="" id="">
                             <option value="" disabled selected><span>Сортировать</span></option>
                             <option value="По умолчанию">По умолчанию</option>
                             <option value="По возрастанию цены">По возрастанию цены</option>
@@ -192,6 +193,15 @@
         </div>
     </footer>
     <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+    <div class="modal" id="modal">
+        <nav class="nav _modal">
+            <button class="modal-close" onclick="closeModal()"></button>
+            <a href="#" class="nav-link">Главная</a>
+            <a href="#" class="nav-link">Меню</a>
+            <a href="#" class="nav-link">О нас</a>
+            <a href="contact.html" class="nav-link">Контакты</a>
+        </nav>
+    </div>
     <script src="/js/script.js"></script>
 </body>
 
