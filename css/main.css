@@ -462,7 +462,7 @@ main {
 .footer-nav a {
     display: block;
     color: #fff;
-    margin: 17px 0;
+    margin: 15px 0;
     transition-duration: 0.2s;
 }
 
@@ -487,7 +487,7 @@ main {
 
 .footer-tel {
     display: block;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 900;
     text-align: right;
     color: var(--yellow);
@@ -826,24 +826,31 @@ main {
 
     .footer-wrapper {
         flex-direction: column;
-        gap: 33px;
+        gap: 26px;
         position: relative;
         padding: 61px 13px;
     }
 
     .footer-logo {
-        margin-bottom: 8px;
+        margin-bottom: 22px;
     }
 
     .footer-tel._mobile {
         position: absolute;
-        top: 0;
+        top: 51px;
         right: 0;
+        font-size: 20px;
     }
 
     .footer-tel._mobile+.footer-tel._mobile {
         position: absolute;
-        top: 24px;
+        top: 89px;
         right: 0;
+    }
+
+    .footer-title {
+
+        margin-bottom: 20px;
+
     }
 }
